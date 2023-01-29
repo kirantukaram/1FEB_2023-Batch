@@ -37,10 +37,15 @@ public class Utility
 		
 		//3.load file
 	    prop.load(myFile);
+	    
 	  //4.read data from file
+	    
 		String value = prop.getProperty(key);
+		
 		Reporter.log("Reading data from property file",true);
+		
 		Reporter.log("data is"+value,true);
+		
 		return value;
 	}
 	
