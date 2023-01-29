@@ -26,8 +26,11 @@ public class ValidateNeoStoxUserName1UsingPropertyFile extends Base
 	// reading data from property files & Testmethod validate username & AcBalance Two Test pass 
 	
         NeostoxHomePage2 home;
+        
 	    NeoStoxSignInPage2 signIn;
+	    
 	    NeostoxPasswordPage2 pass;
+	    
 	    NeoStoxDashBoardPage2 dash;
 	
 	@BeforeClass
@@ -47,13 +50,16 @@ public class ValidateNeoStoxUserName1UsingPropertyFile extends Base
 	 public void loginTONeoStox() throws InterruptedException, EncryptedDocumentException, IOException
 	    {
 	  	 home.clickOnSignInButton();
+	  	 
 	  	 Utility.implicitWait(1000, driver);
 	  	 
 	  	 signIn.enterMobileNumber(Utility.readDataFromPropertyFile("mobile"));
 	  	 Thread.sleep(1000);
+	  	 
 	  	 signIn.clickOnSignInButton();
 	  	 
 	  	 Utility.implicitWait(1000, driver);
+	  	 
 	  	 pass.enterPassword(Utility.readDataFromPropertyFile("password"));
 	  	 pass.clickOnSubmitButton();
 	  	 
