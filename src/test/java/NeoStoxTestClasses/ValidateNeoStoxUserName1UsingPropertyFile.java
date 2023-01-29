@@ -35,8 +35,11 @@ public class ValidateNeoStoxUserName1UsingPropertyFile extends Base
 	  {
 	     lanuchBrowser();
 	     home = new NeostoxHomePage2 (driver);
+	     
          signIn =new  NeoStoxSignInPage2(driver);
+         
          pass =new NeostoxPasswordPage2(driver);
+         
          dash= new NeoStoxDashBoardPage2(driver);
     }    
 	  	    
