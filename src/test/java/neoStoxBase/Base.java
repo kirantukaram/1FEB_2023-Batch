@@ -11,9 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 
 import neoStoxPOMClasses.Utility;
-
-
-
 public class Base
 { 
 	protected WebDriver driver;

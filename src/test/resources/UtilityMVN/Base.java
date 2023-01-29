@@ -22,7 +22,6 @@ public class Base
 	      
 	      driver= new ChromeDriver();
 	      driver.manage().window().maximize();
-	      
 	      driver.get("https://neostox.com/");
 	      //driver.get(Utility.readDataFromPropertyFile("urlqa"));
 	   
