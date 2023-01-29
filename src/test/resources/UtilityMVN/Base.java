@@ -21,11 +21,16 @@ public class Base
 		  System.setProperty("webdriver.chrome.driver","C:\\selenium folder\\chromedriver_win32\\chromedriver.exe");
 	      
 	      driver= new ChromeDriver();
+	      
 	      driver.manage().window().maximize();
+	      
 	      driver.get("https://neostox.com/");
+	      
 	      //driver.get(Utility.readDataFromPropertyFile("urlqa"));
+	      
 	   
 	      Utility.implicitWait(1000, driver);
+	      
 	      Reporter.log("Launching lanuchNeoStoxApp",true);
 	      
 	  }
