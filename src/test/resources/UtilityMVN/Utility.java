@@ -41,11 +41,8 @@ public class Utility
 	  //4.read data from file
 	    
 		String value = prop.getProperty(key);
-		
 		Reporter.log("Reading data from property file",true);
-		
 		Reporter.log("data is"+value,true);
-		
 		return value;
 	}
 	
@@ -54,7 +51,7 @@ public class Utility
         File myFile = new File("C:\\selenium folder\\kiranExcelsheet.xlsx");
 	     Sheet mySheet = WorkbookFactory.create(myFile).getSheet("Sheet5");
 	     
-		 String value= mySheet.getRow(row).getCell(cell).getStringCellValue();
+	      String value= mySheet.getRow(row).getCell(cell).getStringCellValue();
 		 Reporter.log("Reading data from excel row is"+row+"cell is"+cell+",true");
 		 Reporter.log("data is"+value,true);
 		 return value;

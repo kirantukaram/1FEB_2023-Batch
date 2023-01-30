@@ -26,11 +26,8 @@ public class ValidateNeoStoxUserName1UsingPropertyFile extends Base
 	// reading data from property files & Testmethod validate username & AcBalance Two Test pass 
 	
         NeostoxHomePage2 home;
-        
-	    NeoStoxSignInPage2 signIn;
-	    
+        NeoStoxSignInPage2 signIn;
 	    NeostoxPasswordPage2 pass;
-	    
 	    NeoStoxDashBoardPage2 dash;
 	
 	@BeforeClass
@@ -38,11 +35,8 @@ public class ValidateNeoStoxUserName1UsingPropertyFile extends Base
 	  {
 	     lanuchBrowser();
 	     home = new NeostoxHomePage2 (driver);
-	     
-         signIn =new  NeoStoxSignInPage2(driver);
-         
+	     signIn =new  NeoStoxSignInPage2(driver);
          pass =new NeostoxPasswordPage2(driver);
-         
          dash= new NeoStoxDashBoardPage2(driver);
     }    
 	  	    
