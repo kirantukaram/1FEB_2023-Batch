@@ -16,6 +16,7 @@ public class OrderPage
 			//2.
 			
 	 public OrderPage(WebDriver driver)
+	 
 			{
 				PageFactory.initElements(driver,this);
 			}
@@ -24,6 +25,7 @@ public class OrderPage
 	 public void enterMobileNumber(String mobNum)
 			{
 				mobileNumField.sendKeys(mobNum);
+				
 				
 				Reporter.log("Entering mobile number",true);
 			}	
