@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-public class ProFilepage 
+public class ProfilePage 
 {
 	//1.Data member should be declared globaly with access level private using @findBy Automation
 	
@@ -14,18 +14,21 @@ public class ProFilepage
 
 		 //2.Initilize within a constructor with access level public using pagefactory
 				  
-			public ProFilepage(WebDriver driver)
+			public ProfilePage(WebDriver driver)
 			{
 					PageFactory.initElements(driver, this);
+					
 			}
 	//3.Utlilize within a method with access level public
 			
 				
 		 public void clickOnSignInButton() throws InterruptedException
+		 
 			{
 					Thread.sleep(1000);
 					
 					signInButton.click();
+					
 					
 					Reporter.log("clicling on signin button",true);
 		}
