@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-public class ProfilePage 
+public class ProFilepage 
 {
 	//1.Data member should be declared globaly with access level private using @findBy Automation
 	
@@ -14,7 +14,7 @@ public class ProfilePage
 
 		 //2.Initilize within a constructor with access level public using pagefactory
 				  
-			public ProfilePage(WebDriver driver)
+			public ProFilepage(WebDriver driver)
 			{
 					PageFactory.initElements(driver, this);
 			}
