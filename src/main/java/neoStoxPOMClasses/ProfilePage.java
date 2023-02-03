@@ -28,7 +28,9 @@ public class ProfilePage
 			{
 					Thread.sleep(1000);
 					
+					
 					signInButton.click();
+					
 					
 					
 					Reporter.log("clicling on signin button",true);
