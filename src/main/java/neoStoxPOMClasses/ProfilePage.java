@@ -15,6 +15,7 @@ public class ProfilePage
 		 //2.Initilize within a constructor with access level public using pagefactory
 				  
 			public ProfilePage(WebDriver driver)
+			
 			{
 					PageFactory.initElements(driver, this);
 					
