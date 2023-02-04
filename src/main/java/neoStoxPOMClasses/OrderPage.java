@@ -22,20 +22,26 @@ public class OrderPage
 			}
 			//3.
 			
-	 public void enterMobileNumber(String mobNum)
+	 public void enterMobileNumber(CharSequence[] mobNum)
 			{
 				mobileNumField.sendKeys(mobNum);
 				
 				
 				Reporter.log("Entering mobile number",true);
 			}	
-	 public void clickOnSignInButton()
+	 public void clickOnSignInButton ()
 			{
 				SignInButton.click();
 				
 				Reporter.log("Clicking on sign in button",true);
 			}
 		}
+
+
+
+
+
+
 
 	
 
